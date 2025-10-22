@@ -1,53 +1,23 @@
-```markdown
 # PrOxY
 
-> **advanced residential proxy scraping suite**  
-> *clean, fast, and reliable proxy acquisition tool*
 
----
-
-## 📁 project structure
-
-```
-PrOxY/
-├── main.py                 # primary execution file
-├── requirements.txt        # dependencies
-├── run_fixed.py           # testing script
-├── quick_test.py          # rapid validation script
-├── success/               # output directory
-│   ├── good.json         # verified working proxies
-│   ├── blyat.json        # failed/invalid proxies  
-│   └── unknown.json      # unclassified proxies
-└── utils/                 # core modules
-    ├── proxy_scraper.py  # multi-source proxy extraction
-    ├── validator.py      # proxy validation & testing
-    └── file_manager.py   # results management
+```markdown
+PrOxY - Advanced proxy scraping suite. Fast, async, multi-source proxy aggregation with real-time validation. Clean JSON output, progress tracking, and developer-friendly architecture. Perfect for web scraping, automation, and development workflows.
 ```
 
----
-
-## 🚀 quick start
 
 ### installation
 ```bash
-# clone and setup
-git clone <repository-url>
-cd PrOxY
-
-# install dependencies
-pip install -r requirements.txt
-
-# run the tool
-python main.py
+git clone https://github.com/damnfbi/PrOxY.git
 ```
-
-### rapid testing
 ```bash
-# quick validation (15 proxies)
-python quick_test.py
-
-# verified fixed version
-python run_fixed.py
+cd PrOxY
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+python main.py
 ```
 
 ---
@@ -64,7 +34,7 @@ python run_fixed.py
 
 ---
 
-## 🔧 core components
+## core components
 
 ### `proxy_scraper.py`
 - geonode api integration
@@ -87,7 +57,7 @@ python run_fixed.py
 
 ---
 
-## 📊 output format
+## output format
 
 ### good.json
 ```json
@@ -103,33 +73,33 @@ python run_fixed.py
 
 ### session summary
 ```
-==================================================
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
 scraping session completed
-==================================================
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
 good proxies - 29
 bad proxies - 19
 unknown proxies - 301
-==================================================
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
 success rate - 8.3%
-==================================================
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
 ```
 
 ---
 
-## 🛠️ dependencies
+## dependencies
 
 ```txt
-requests==2.31.0
-beautifulsoup4==4.12.2
-aiohttp==3.8.5
-asyncio==3.4.3
-fake-useragent==1.4.0
-colorama==0.4.6
+requests
+beautifulsoup4
+aiohttp
+asyncio
+fake-useragent
+colorama
 ```
 
 ---
 
-## 🎯 usage examples
+## usage examples
 
 ### basic scraping
 ```python
@@ -157,7 +127,7 @@ results = await proxy_master.run()
 
 ---
 
-## 📈 performance
+## performance
 
 - **scraping speed**: 5-10 seconds for 300+ proxies
 - **validation speed**: 20-30 seconds for 500 proxies  
@@ -167,7 +137,7 @@ results = await proxy_master.run()
 
 ---
 
-## 🔄 workflow
+## workflow
 
 1. **initialization** - clear terminal, setup directories
 2. **scraping phase** - extract proxies from multiple sources
@@ -178,14 +148,14 @@ results = await proxy_master.run()
 
 ---
 
-## 📞 support
+## support
 
 **developer**: [damnfbi](https://t.me/damnfbi)  
 **issues**: please include error logs and system information
 
 ---
 
-## ⚠️ disclaimer
+## disclaimer
 
 for educational and development purposes only.  
 respect api rate limits and website terms of service.  
@@ -193,7 +163,7 @@ users are responsible for compliant usage.
 
 ---
 
-## 🎨 aesthetic notes
+## aesthetic notes
 
 - clean lowercase text throughout
 - consistent symbol usage (no colons in output)
@@ -203,4 +173,5 @@ users are responsible for compliant usage.
 
 ```
 
-*built with attention to detail for developers who value clean code and reliable tools* 🛠️
+built with attention to detail for developers who value clean code and reliable tools 🛠️
+```

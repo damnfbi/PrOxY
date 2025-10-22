@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+aiohttp
+asyncio
+fake-useragent
+colorama
